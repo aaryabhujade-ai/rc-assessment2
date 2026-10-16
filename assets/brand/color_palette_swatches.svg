@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="100%">
+  <defs>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="320" rx="16" fill="#0E0E10" stroke="#1F1F24" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="50" y="55" font-family="'Inter', sans-serif" font-size="13" font-weight="600" letter-spacing="4" fill="#D4A64A">
+    BRAND IDENTITY SPECIFICATION
+  </text>
+  <text x="50" y="82" font-family="'Inter', sans-serif" font-size="22" font-weight="300" letter-spacing="2" fill="#FFFFFF">
+    Auralis Nova Official Color System
+  </text>
+
+  <!-- Swatch 1: Obsidian Black -->
+  <g transform="translate(50, 115)">
+    <rect width="160" height="110" rx="10" fill="#0A0A0B" stroke="#2C2C30" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="16" y="145" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Obsidian Black</text>
+    <text x="16" y="165" font-family="'SF Mono', monospace" font-size="12" fill="#8E8E93">#0A0A0B</text>
+    <text x="16" y="183" font-family="'Inter', sans-serif" font-size="10" fill="#58585E">Primary Body &amp; Glass</text>
+  </g>
+
+  <!-- Swatch 2: Deep Charcoal -->
+  <g transform="translate(230, 115)">
+    <rect width="160" height="110" rx="10" fill="#1C1C1F" stroke="#36363C" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="16" y="145" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Deep Charcoal</text>
+    <text x="16" y="165" font-family="'SF Mono', monospace" font-size="12" fill="#8E8E93">#1C1C1F</text>
+    <text x="16" y="183" font-family="'Inter', sans-serif" font-size="10" fill="#7C7C84">Shadow &amp; Stone Texture</text>
+  </g>
+
+  <!-- Swatch 3: Metallic 24K Gold -->
+  <g transform="translate(410, 115)">
+    <rect width="160" height="110" rx="10" fill="#D4A64A" stroke="#E5BC68" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="16" y="145" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Metallic 24K Gold</text>
+    <text x="16" y="165" font-family="'SF Mono', monospace" font-size="12" fill="#D4A64A">#D4A64A</text>
+    <text x="16" y="183" font-family="'Inter', sans-serif" font-size="10" fill="#8E8E93">Hinges, Sliders &amp; Accents</text>
+  </g>
+
+  <!-- Swatch 4: Champagne Highlight -->
+  <g transform="translate(590, 115)">
+    <rect width="160" height="110" rx="10" fill="#F2D9A0" stroke="#FCE6B8" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="16" y="145" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Champagne Glow</text>
+    <text x="16" y="165" font-family="'SF Mono', monospace" font-size="12" fill="#D4A64A">#F2D9A0</text>
+    <text x="16" y="183" font-family="'Inter', sans-serif" font-size="10" fill="#8E8E93">Specular Highlights &amp; Rings</text>
+  </g>
+
+  <!-- Swatch 5: Soft Warm White -->
+  <g transform="translate(770, 115)">
+    <rect width="160" height="110" rx="10" fill="#F5F1E8" stroke="#E6E0D2" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <text x="16" y="145" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Soft Warm White</text>
+    <text x="16" y="165" font-family="'SF Mono', monospace" font-size="12" fill="#8E8E93">#F5F1E8</text>
+    <text x="16" y="183" font-family="'Inter', sans-serif" font-size="10" fill="#7C7C84">Editorial Headline Typography</text>
+  </g>
+</svg>

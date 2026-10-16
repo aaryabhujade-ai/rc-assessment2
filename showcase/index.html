@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auralis Nova — Flagship Key Visual & ComfyUI Showcase</title>
+  <meta name="description" content="Assessment 2: Premium Headphone Advertising Key Visual for Auralis Nova. Qwen Image 2.1 ComfyUI diffusion workflow, creative direction, prompt engineering, and visual evaluation.">
+  <meta name="theme-color" content="#0A0A0B">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Showcase Stylesheet -->
+  <link rel="stylesheet" href="showcase.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-wrapper" id="brandLink">
+        <div class="brand-mark" id="brandMarkIcon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+          </svg>
+        </div>
+        <div class="brand-title" id="brandTitleText">
+          AURALIS<span>NOVA</span>
+        </div>
+      </a>
+      
+      <div class="header-badges">
+        <span class="badge badge-gold" id="badgePipeline">Qwen Image 2.1</span>
+        <span class="badge badge-dark" id="badgeAssessment">Assessment 2 Complete</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Viewport -->
+  <main class="container">
+    <section class="hero-section" id="hero">
+      <div class="hero-meta-row">
+        <div class="hero-titles">
+          <div class="section-label" id="campaignSubheading">Global Flagship Launch Campaign</div>
+          <h1 id="campaignHeadline"><strong>Silence, Shattered.</strong> The Auralis Nova Key Visual</h1>
+          <p class="hero-subtitle" id="campaignConcept">A single pulse of acoustic energy shatters black volcanic glass. Obsidian, deep charcoal & 24K gold.</p>
+        </div>
+        <div class="hero-actions">
+          <button class="btn-action" id="btnZoomToggle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+            Inspect Fullscreen
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Interactive Image Display -->
+      <div class="visual-viewer" id="mainViewer">
+        <div class="visual-image-wrapper" id="imageWrapper">
+          <img id="activeKeyVisualImg" src="../assets/outputs/auralis_nova_hero_key_visual.png" alt="Auralis Nova Flagship Key Visual Hero Shot in Obsidian and 24K Gold">
+        </div>
+        <div class="visual-overlay-controls">
+          <div class="overlay-tag" id="activeEditionTag">Edition 01: Obsidian & 24K Gold (Flagship Hero)</div>
+          <div class="overlay-actions">
+            <button class="btn-action" id="btnToggleMagnify">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+              </svg>
+              Magnify Detail
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campaign Exploration Gallery Selector -->
+    <section class="gallery-section" id="gallerySection">
+      <div class="section-label">Campaign Editions & Visual Explorations</div>
+      <div class="edition-grid" id="editionGrid">
+        <!-- Edition 1: Hero Obsidian Gold -->
+        <div class="edition-card active" data-edition="0" id="cardEdition0">
+          <div class="card-thumb">
+            <img src="../assets/outputs/auralis_nova_hero_key_visual.png" alt="Edition 01: Obsidian & Gold">
+          </div>
+          <div class="card-title">Silence, Shattered</div>
+          <div class="card-edition">EDITION 01 · OBSIDIAN &amp; 24K GOLD</div>
+          <div class="card-tagline">Volcanic glass shatter &amp; acoustic shockwave</div>
+        </div>
+
+        <!-- Edition 2: Cyber Titanium Emerald -->
+        <div class="edition-card" data-edition="1" id="cardEdition1">
+          <div class="card-thumb">
+            <img src="../assets/outputs/auralis_nova_campaign_gravity.png" alt="Edition 02: Gravity Titanium Emerald">
+          </div>
+          <div class="card-title">Defy The Gravity</div>
+          <div class="card-edition">EDITION 02 · TITANIUM &amp; EMERALD</div>
+          <div class="card-tagline">Zero-G rings &amp; cyber-luminescence</div>
+        </div>
+
+        <!-- Edition 3: Alabaster Pearl & Crystal -->
+        <div class="edition-card" data-edition="2" id="cardEdition2">
+          <div class="card-thumb">
+            <img src="../assets/outputs/auralis_nova_campaign_beyond.png" alt="Edition 03: Celestia Pearl Crystal">
+          </div>
+          <div class="card-title">Beyond Silence</div>
+          <div class="card-edition">EDITION 03 · PEARL &amp; ROSE GOLD</div>
+          <div class="card-tagline">Amethyst crystals &amp; celestial ring</div>
+        </div>
+
+        <!-- Edition 4: Liquid Glass Jade -->
+        <div class="edition-card" data-edition="3" id="cardEdition3">
+          <div class="card-thumb">
+            <img src="../assets/outputs/auralis_nova_campaign_undertow.png" alt="Edition 04: Abyss Jade Glass">
+          </div>
+          <div class="card-title">Feel The Undertow</div>
+          <div class="card-edition">EDITION 04 · JADE &amp; LIQUID GLASS</div>
+          <div class="card-tagline">Fluid ribbons &amp; caustic water reflections</div>
+        </div>
+
+        <!-- Edition 5: Solar Amber Copper -->
+        <div class="edition-card" data-edition="4" id="cardEdition4">
+          <div class="card-thumb">
+            <img src="../assets/outputs/auralis_nova_campaign_solar.png" alt="Edition 05: Solar Series Copper">
+          </div>
+          <div class="card-title">Own The Moment</div>
+          <div class="card-edition">EDITION 05 · SOLAR BRONZE &amp; COPPER</div>
+          <div class="card-tagline">Golden hour atmospheric light beam</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep-Dive Specifications & Prompt Inspector -->
+    <section class="details-grid" id="detailsSection">
+      
+      <!-- Panel 1: Generation & ComfyUI Parameters -->
+      <div class="glass-panel" id="paramsPanel">
+        <div class="panel-header">
+          <h2>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            ComfyUI Pipeline Parameters
+          </h2>
+          <span class="badge badge-gold" id="seedDisplay">Seed: 447606998181262</span>
+        </div>
+        <div class="panel-body">
+          <div class="spec-list" id="pipelineSpecList">
+            <div class="spec-item">
+              <span class="spec-name">Core Diffusion Model</span>
+              <span class="spec-value">qwen_image_2.1_int8_convrot.safetensors</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-name">Multimodal Text Encoder</span>
+              <span class="spec-value">qwen3vl_8b_int8_convrot.safetensors</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-name">VAE Engine</span>
+              <span class="spec-value">qwen_image_2.1_vae_bf16.safetensors</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-name">Sampling Algorithm</span>
+              <span class="spec-value">Euler / Simple Scheduler</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-name">Steps / CFG Scale</span>
+              <span class="spec-value">25 Steps · CFG 1.0</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-name">Canvas Resolution</span>
+              <span class="spec-value">1376 × 768 px (16:9 Widescreen)</span>
+            </div>
+          </div>
+
+          <!-- Color System Swatches -->
+          <div class="section-label" style="margin-top: 24px;">Official Color System (Click to Copy HEX)</div>
+          <div class="swatches-grid" id="swatchesGrid">
+            <div class="swatch-card" data-hex="#0A0A0B" id="swatchObsidian">
+              <div class="swatch-color" style="background: #0A0A0B;"></div>
+              <div class="swatch-name">Obsidian</div>
+              <div class="swatch-hex">#0A0A0B</div>
+            </div>
+            <div class="swatch-card" data-hex="#1C1C1F" id="swatchCharcoal">
+              <div class="swatch-color" style="background: #1C1C1F;"></div>
+              <div class="swatch-name">Charcoal</div>
+              <div class="swatch-hex">#1C1C1F</div>
+            </div>
+            <div class="swatch-card" data-hex="#D4A64A" id="swatchGold">
+              <div class="swatch-color" style="background: #D4A64A;"></div>
+              <div class="swatch-name">24K Gold</div>
+              <div class="swatch-hex">#D4A64A</div>
+            </div>
+            <div class="swatch-card" data-hex="#F2D9A0" id="swatchChampagne">
+              <div class="swatch-color" style="background: #F2D9A0;"></div>
+              <div class="swatch-name">Champagne</div>
+              <div class="swatch-hex">#F2D9A0</div>
+            </div>
+            <div class="swatch-card" data-hex="#F5F1E8" id="swatchWarmWhite">
+              <div class="swatch-color" style="background: #F5F1E8;"></div>
+              <div class="swatch-name">Warm White</div>
+              <div class="swatch-hex">#F5F1E8</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Prompt Engineering Inspector -->
+      <div class="glass-panel" id="promptPanel">
+        <div class="panel-header">
+          <h2>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Prompt Engineering &amp; Synthesis
+          </h2>
+          <span class="badge badge-dark">Modular Architecture</span>
+        </div>
+        <div class="panel-body">
+          <div class="section-label">Active Positive Prompt (Qwen Image 2.1)</div>
+          <div class="code-container">
+            <button class="btn-copy-code" id="btnCopyPositive">Copy Prompt</button>
+            <div class="code-box" id="positivePromptBox">A photorealistic, ultra-premium cinematic advertising poster for a luxury wireless headphone brand, wide 16:9 landscape format, art-directed like a global flagship product launch campaign.
+
+CONCEPT:
+A single pulse of sound from the headphones has shattered a wall of black volcanic glass. The moment is frozen in time: power, precision and silence captured in one frame.
+
+HERO PRODUCT (right side, dominant):
+One pair of premium over-ear wireless headphones floats mid-air in the right half of the frame, centered around the right third, angled in a dynamic three-quarter view and tilted about 15 degrees. It fills roughly 50% of the frame height and is razor sharp. Colorway: OBSIDIAN & 24K GOLD.
+- Headband: a seamless, single-piece arc in deep glossy obsidian black with a mirror-like lacquer finish, and an underside cushioned in fine black protein leather with precise gold stitching.
+- Sliders and hinges: slim, polished 24-karat gold metal with machined bevelled edges and engraved precision detailing.
+- Earcups: oval, matte obsidian black, with an outer face of a fine micro-perforated acoustic mesh in a subtle radial pattern and a razor-thin warm-gold luminous light ring glowing around the outer edge.
+- Ear cushions: plush memory foam wrapped in soft black protein leather with visible natural grain and fine stitching.
+- Branding: a tiny, elegant engraved "AURALIS" wordmark in gold on the earcup.
+Flawless industrial design, physically accurate metal reflectance, realistic leather micro-texture, no visible buttons or cables.
+
+SCENE AND DYNAMIC ACTION:
+Erupting outward from directly behind the headphones, a thick pane of black volcanic glass shatters in a radial explosion. Hundreds of sharp, angular obsidian shards and glinting gold-edged fragments are frozen mid-flight, spiralling outward in a dynamic vortex around the product. Fine 24K gold dust, tiny molten-gold sparks and glass micro-particles hang suspended in the air. A faint visible ring-shaped shockwave distortion ripples through the air around the earcups.
+
+DEPTH LAYERS:
+- Foreground: a few large obsidian shards close to the lens, softly out of focus with bokeh highlights, framing the scene.
+- Midground: the headphones in perfect crisp focus, surrounded by sharp flying shards and gold dust.
+- Background: a dark charcoal backdrop of textured volcanic stone with fine grain and subtle cracks, lit by soft grazing light and fading into deep smoky shadow.
+- Atmosphere: thin layers of drifting volumetric smoke catching the light, creating strong three-dimensional depth.
+
+LIGHTING (cinematic and dramatic):
+- A hard, narrow top-down spotlight acting as the key, sculpting the headband's curve with a long specular highlight.
+- Warm gold rim lights from back-left and back-right tracing a crisp glowing outline around the entire product silhouette, separating it cleanly from the dark background.
+- A soft circular backlight bloom directly behind the headphones, creating a subtle halo that pushes the product forward.
+- Every shard catches sharp specular glints and gold reflections.
+- Deep rich blacks with retained shadow detail, controlled highlights, a gentle bloom on the gold light rings.
+
+COLOR PALETTE:
+Obsidian black (#0A0A0B), charcoal smoke (#1C1C1F), 24K gold (#D4A64A), champagne highlight (#F2D9A0), soft warm white (#F5F1E8). A luxurious black-and-gold cinematic color grade with a subtle film-like tonal roll-off.
+
+TYPOGRAPHY AND LAYOUT (left 40% of frame, clean negative space):
+The left side is a calm, darker, uncluttered area with a smooth charcoal-to-black gradient and faint stone texture. It holds a refined, left-aligned editorial typographic layout with generous margins (about 6% of frame width from the left edge):
+1. Top left: the brand wordmark "AURALIS" in a thin geometric sans-serif with very wide letter-spacing, in polished gold, small and elegant.
+2. Vertical center left: a large two-line headline, "SILENCE," over "SHATTERED.", in a bold condensed modern sans-serif with a white fill, a subtle brushed-gold metallic texture, and a soft warm glow. This is the largest text in the composition.
+3. Below the headline: the product name "NOVA" in an ultra-thin, widely spaced luxury high-contrast serif in gold, with a thin horizontal gold rule extending to its right.
+4. Below that: the tagline "Wireless. Weightless. Limitless." in a light grey, refined sans-serif at small size.
+5. Bottom left corner: "AVAILABLE NOW" in tiny wide-tracked gold capitals.
+All text is crisp, sharp, correctly spelled, perfectly kerned, with clear visual hierarchy and no overlapping with any shards. The typography sits naturally within the scene lighting.
+
+CAMERA AND RENDERING:
+Shot on a Phase One IQ4 medium format camera with a 100mm macro lens at f/8 and a 1/20000s high-speed-flash aesthetic. Eye-level, slightly low angle for a heroic presence. Product tack sharp; foreground and far background gently defocused.
+Hyper-photorealistic, 8K resolution, ultra-detailed textures, commercial product photography combined with high-speed photography. Art direction in the style of Bang & Olufsen, Bowers & Wilkins and Cartier campaigns: luxurious, powerful, sophisticated and aspirational.
+
+No watermark, no signature, no border, and no text other than the specified words.</div>
+          </div>
+
+          <div class="section-label">Active Negative Token Constraints</div>
+          <div class="code-container">
+            <button class="btn-copy-code" id="btnCopyNegative">Copy Negative</button>
+            <div class="code-box" id="negativePromptBox" style="max-height: 90px;">misspelled text, garbled letters, gibberish typography, extra words, distorted fonts, overlapping text, watermark, signature, border, multiple headphones, duplicate product, deformed headband, asymmetrical earcups, broken hinges, cheap plastic, toy look, wires, cables, people, hands, product blending into background, cluttered left side, muddy colors, oversaturated neon, flat lighting, blown highlights, noise, jpeg artifacts, blurry product, cartoon, illustration, CGI plastic look, low resolution</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal for Inspection -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close" id="btnCloseLightbox">&times;</button>
+    <img id="lightboxImg" src="" alt="Zoomed view">
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Auralis Nova · Assessment 2: Premium Headphone Advertising Key Visual · ComfyUI Architecture</p>
+      <p style="margin-top: 6px;">Engineered with Qwen Image 2.1 &amp; Antigravity Agentic Studio</p>
+    </div>
+  </footer>
+
+  <!-- Showcase Logic Script -->
+  <script src="showcase.js"></script>
+</body>
+</html>
